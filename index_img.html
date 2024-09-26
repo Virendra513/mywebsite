@@ -55,14 +55,12 @@
     <br>
 
     <form method="post" enctype="multipart/form-data" action="predict_img/">
-        {% csrf_token %}
         <div style="display: flex; justify-content: center; align-items: center; height: 10vh;">
             <div class="col-md-4 col-sm-4 d-flex flex-column align-items-center" style="font-size: 25px;">
                 <label for="fname">Upload Image File Here:</label>
             </div>
         </div>
 
-        
         <div style="display: flex; justify-content: center;">
             <input name="filePath" type="file" ><br><br>
         </div>
@@ -182,6 +180,3 @@
           </div>
         </div>
       </footer>
-
-
-
