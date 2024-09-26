@@ -141,7 +141,8 @@ button{
     </div>
     <form method="post">
         <h3>Login Here</h3>
-        {% csrf_token %} 
+        <!-- 
+{% csrf_token %} -->
         <label for="username">Username</label>
         <input type="text" placeholder="Enter Username" id="username" name="username">
 
@@ -154,7 +155,7 @@ button{
           <div class="go"><i class="fab fa-google"></i>  Google</div>
           <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
         </div> -->
-        {% comment %} <a href="{% url 'signup' %}" >Create a account</a> {% endcomment %}
+        <!--  <a href="{% url 'signup' %}" >Create a account</a> {% endcomment %} -->
     </form>
 </body>
 </html>
