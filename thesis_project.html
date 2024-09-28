@@ -210,12 +210,38 @@
           <img alt="content" class="object-cover object-center h-full w-full" src="2_Lidar2D.png">
         </div>
         <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Mapped LiDAR PCL</h2>
-        <p class="leading-relaxed text-base">i) Transformation and Projection of LiDAR coordinates to RGB Camera coordinates. ii)  Mapping Lidar Points in Camera Coordinate to Image plane.</p>
+        <p class="leading-relaxed text-base">i) These operation applied on PCL : i))Transformation and Projection of LiDAR coordinates to RGB Camera coordinates. ii)  Mapping Lidar Points in Camera Coordinate to Image plane using homogemous transformation and camera matrices.</p>
         <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
       </div>
     </div>
   </div>
 </section>
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="2_Lidar2D.png">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Sparse Point Cloud </h2>
+        <p class="leading-relaxed text-base">A sparse point cloud consists of 3D data points that are spaced further apart, leading to a lower density compared to a dense point cloud. This type of point cloud usually results from infrequent sampling of a scene, such as when LiDAR data is gathered from a considerable distance or when surveying larger areas with fewer data points. It has less sematic inforamtion and reduces accuracy of detection. This problem is resolve using densification technique(shown to the right).</p>
+        <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+      </div>
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="3_Densified_Lidar2D.png">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Densified Point Cloud using Nearest Neighbour Interpolation</h2>
+        <p class="leading-relaxed text-base">Sparse point cloud are densified using Nearest Neighbour Interpolation technique. This technique involves estimating the value of an unknown point by assigning it the value of the closest known point in the dataset. By utilizing the spatial proximity of existing points, nearest neighbor interpolation can fill gaps in the data, creating a denser representation of the point cloud.   </p>
+        <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
  
 
@@ -230,7 +256,7 @@
               </svg>
               <span class="ml-3 text-xl">Virendra S Kaira</span>
             </a>
-            <p class="mt-2 text-sm text-gray-500">M Tech Data Science  Computer Vision, NLP, Data Pre-processing, EDA, Digital Image Processing, Time Series Analysis, Generative AI, LLM'S. </p>
+            <p class="mt-2 text-sm text-gray-500">M Tech Data Science,  Computer Vision, NLP, Data Pre-processing, EDA, Digital Image Processing, Time Series Analysis, Generative AI, LLM'S. </p>
           </div>
           <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
